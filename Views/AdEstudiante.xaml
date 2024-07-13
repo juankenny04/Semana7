@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana6.Views.AdEstudiante"
+             Title="AdEstudiante">
+    <VerticalStackLayout>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="20">
+
+            <Label Text="Agregar Nuevo Estudiante" FontSize="20" HorizontalOptions="Center" />
+
+            <Entry x:Name="codigoEntry" Placeholder="Código" />
+            <Entry x:Name="nombreEntry" Placeholder="Nombre" />
+            <Entry x:Name="apellidoEntry" Placeholder="Apellido" />
+            <Entry x:Name="edadEntry" Placeholder="Edad" Keyboard="Numeric" />
+
+            <Button Text="Agregar" Clicked="OnAgregarClicked" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
